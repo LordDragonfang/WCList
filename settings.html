@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webcomic List: Settings</title>
+  <link id="templatebase" rel="stylesheet" type="text/css" media="screen" href="templatebase_mod.css">
+  <link id="fw_template_file" rel="stylesheet" type="text/css" href="Serene_White.css" media="screen">
+  <script type="text/javascript" src="WCArray.js"></script>
+  <script type="text/javascript" src="settings.js"></script>
+</head>
+
+<body><!--Static HTML; on load, calls drawSettings()-->
+<div id="fw-container">
+    <h3 class="fw-title">Settings</h3>
+    <h3 class="fw-title" id="settings" style="position:absolute; top:40px; width:950px; text-align:right;">
+        <a href="index.html">&lt Back</a></h3>
+    <h4>Main Settings <a style="cursor:pointer" id="togMainSet">-</a></h4>
+    <div class="hidable" id="mainSet">
+        <div>Show NSFW comics?
+            <input type="radio" id="showNSFW" name="gshowNSFW" style="margin-left: 1em !important;">Show without tag
+            <input type="radio" id="tagNSFW" name="gshowNSFW" style="margin-left: 1em !important;">Show with tag
+            <input type="radio" id="hideNSFW" name="gshowNSFW" style="margin-left: 1em !important;">Hide
+        </div><p></p>
+        <div>Highlight next day?
+            <input type="radio" id="HNextFalse" name="gHNext" style="margin-left: 1em !important;">No
+            <input type="radio" id="HNextTrue" name="gHNext" style="margin-left: 1em !important;">After
+            [Add Dropdown Here]
+        </div><p></p>
+        <div>Show title?
+            <input type="radio" id="showTitle" name="gshowTitle" style="margin-left: 1em !important;">Show
+            <input type="radio" id="hideTitle" name="gshowTitle" style="margin-left: 1em !important;">Hide
+            <input type="radio" id="custTitle" name="gshowTitle" style="margin-left: 1em !important;">Show Custom:
+            <input type="text" id="customTitleText">
+        </div>
+    </div>
+    <h4>Webcomics List
+      <a style="cursor:pointer" id="togWCList">-</a>
+      <input type="button" id="saveOLButton" value="save list">
+      <input type="button" id="resetOLButton" value="reset list">
+    </h4>
+    <div class="hidable" id="orderedList"></div>
+    <h4>Advanced <a style="cursor:pointer" id="togAdvSet">+</a></h4>
+    <div class="hidable hide" id="advSet" ><!-- style="display:none" -->
+        <div>Import/Export:<br>
+        <textarea id="importExportBox" style="width: 40em; height: 6em;"></textarea><br>
+        <input type="button" id="importButton" value="Import from Text">
+        <input type="button" id="exportButton" value="Export to Text">
+        </div><p></p>
+        (Export your list before using either of these, because <em>it will be cleared</em>.)
+        <input type="button" id="loadDefButton" value="Load sample list">
+        <input type="button" id="clearButton" value="Clear list">
+    </div>
+</div>
+</body>
+</html>

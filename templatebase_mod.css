@@ -1,0 +1,192 @@
+/* templatebase -- Modified */
+/* Originally from @import url('http://static.websimages.com/static/global/css/templatebase.css'); */
+
+/* --------------------- fwml.css --------------------- */
+
+/* fw:help-box */
+.fw-help-box {
+	background-color:#CBDEFF;
+	border:3px solid #929AC8;
+	-moz-border-radius:5px;
+	color:#333;
+	padding:8px 10px;
+	font-size:13px;
+	line-height:18px;
+	font-family: Arial, sans-serif;
+}
+.fw-help-box-close {
+	cursor:pointer;
+	float:right;
+	position:relative;
+	right:-8px;
+	top:-6px;
+}
+.fw-help-box p {
+	margin: 0 !important;
+}
+
+/* fw:help-tip */
+.fw-help-tip-icon {
+	vertical-align: middle;
+}
+
+.fw-help-tip {
+   width: 353px;
+	font-family: arial, sans-serif;
+   font-size: 13px;
+   line-height: 20px;
+   position: absolute;
+   top: -6px;
+   left: 0px;
+   display: none;
+   color: #fff;
+   padding-top: 0px;
+   padding-bottom: 5px;
+}
+
+.fw-help-tip {
+   background: transparent url('http://images.freewebs.com/Images/Signup/blue_message_body.gif') no-repeat bottom right;
+
+}
+
+.fw-help-tip span {
+   background: transparent url('http://images.freewebs.com/Images/Signup/blue_message_top.gif') no-repeat top left;
+   padding-left: 30px;
+   padding-right: 30px;
+   margin-top: 0px;
+   display: block;
+   padding-top: 10px;
+   padding-bottom: 5px;
+}
+
+
+/* fw:divider */
+.fw-divider {
+	border-bottom: 1px solid #000;
+	opacity: 0.15;
+}
+*:first-child+html .fw-divider, * html .fw-divider {
+	filter: alpha(opacity=15);
+}
+
+/* fw:error */
+.fw-error {
+	background-color: #fcd1d1;
+	border: 1px solid #b93a3a;
+	color: #3c3c3c;
+	font-weight: bold;
+	padding: 15px;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	margin-bottom: 15px;
+}
+.fw-error h2 {
+	color: #3c3c3c;
+	font-size: 18px;
+	margin:0;
+	margin-bottom: 10px;
+}
+
+/* fw:list */
+/* fw:list grid */
+.fw-list-grid {
+	width: 100%;
+}
+
+/* fw:list list */
+.fw-list-list {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style-type: none !important;
+}
+.fw-list-list li {
+	clear: both;
+}
+
+/* other stuff */
+a img {
+	border: 0;
+}
+
+textarea {
+	font-family: arial, sans-serif;
+	font-size: 12px;
+}
+/* --- fw:helptip --- */
+
+.fw-infoHover {
+	position: relative;
+	z-index: 8;
+	text-decoration: none;
+}
+
+.fw-infoHover:hover {
+	z-index: 25;
+	cursor: default;
+	text-decoration: none;
+}
+
+.fw-helpText, .fw-infoTab { display: none; }
+
+.fw-helpText {
+	position: absolute;
+	top: -22px;
+	left: 25px;
+	width: 268px;
+	min-height: 30px;
+	background-color: #333;
+	opacity: .9;
+	filter: alpha(opacity = 90);
+	border: 1px solid #333;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	color: #fff;
+	padding: 8px 10px;
+}
+
+.fw-infoTab {
+	background: transparent url('Images/fw_tooltip.png') no-repeat right center;
+	height: 30px;
+	top: -13px;
+	width: 15px;
+	left: 10px;
+	position: absolute;
+}
+
+.fw-infoHover:hover span { display: block; }
+
+* html .fw-helpText { top: -18px; }
+* html .fw-infoTab { 
+	background-image: url('Images/fw_tooltip.gif');
+	top: -8px;
+}
+
+*:first-child+html .fw-infoHover .fw-helpText { top: -18px; }
+*:first-child+html .fw-infoHover .fw-infoTab { top: -8px; }
+
+/* --------------------- templatebase.css --------------------- */
+
+html, body { height: auto !important; }
+
+.formSpan { display: block; margin-bottom: 1.25em; }
+
+.float_left { float: left; }
+.float_right { float: right; }
+
+/* Main dropdown functionality */
+#fw-mainnavwrap li:hover, #fw-mainnavwrap .sfhover { position: relative; }
+#fw-mainnavwrap li ul { position: absolute; left: -999em; line-height: 1; padding: 0; z-index: 10; margin: 0; display: block; }
+#fw-mainnavwrap li:hover ul ul, #fw-mainnavwrap li.sfhover ul ul { left: -999em; }
+#fw-mainnavwrap li:hover ul, #fw-mainnavwrap li li:hover ul, #fw-mainnavwrap li.sfhover ul, #fw-mainnavwrap li li.sfhover ul { left: 0; }
+#fw-mainnavwrap .fw-nav-level-0 ul li { display: block; clear: both; white-space: nowrap; padding: 0 !important; width: 100%; margin: 0; }
+#fw-mainnavwrap .fw-nav-level-1 { opacity: .9;}
+
+/* Default dropdown styles */
+#fw-mainnavwrap .fw-nav-level-1, #fw-mainnavwrap .fw-nav-level-2 { background-color: #000; border: 2px solid #000; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+#fw-mainnavwrap .fw-nav-level-0 ul a { display: block; padding: 5px 10px; width: auto; }
+.navtype-Left #fw-mainnavwrap li:hover > ul { left: 100%; top: 0; }
+.navtype-Left #fw-mainnavwrap .sfhover .fw-nav-level-1 { left: 100%; top: 0; }
+.navtype-Right #fw-mainnavwrap li:hover > ul { left: -100%; top: 0; }
+.navtype-Right #fw-mainnavwrap .sfhover ul { left: -90%; top: 0; }
+.navtype-Top li:hover .fw-nav-level-1, .navtype-Top .sfhover .fw-nav-level-1 { top: 100%; }
+.navtype-Top #fw-mainnavwrap li:hover > .fw-nav-level-2 { top: -2px; left: 100%; }

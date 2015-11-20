@@ -1,0 +1,21 @@
+// index.html //
+add debug build detection
+
+// main.js //
+create (and integrate) balancer.js
+
+// settings.html //
+add dropdown
+look at the way the list is built (refactor?)
+
+// settings.js //
+fix settings saving
+add settings autosave
+--fix list saving
+
+// styles.css //
+fix borders
+migrate styles
+
+// general //
+update defaults.json

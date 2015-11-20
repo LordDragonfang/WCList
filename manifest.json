@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Webcomic List",
+  "short_name": "WCList",
+  "description": "Fang's List: The Dynamic Webcomic List App",
+
+  "version": "0.25",
+
+  "icons": {
+    "16": "assets/icon_16.png",
+    "128": "assets/icon_128.png"
+  },
+
+  "app": {
+    "launch": {
+      "local_path": "index.html"
+    }
+  }
+}
