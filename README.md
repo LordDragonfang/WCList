@@ -1,0 +1,2 @@
+# WCList
+Webcomic List
